@@ -2,7 +2,7 @@ function getFrontPage(){
   $.getJSON("http://reddit.com/.json?jsonp=?", function(json){
     articles = json["data"]["children"];
     url = "http://reddit.com"+articles[0]["data"]["permalink"];
-    var discussion = location.search.substring(12)
+    var discussion = location.search.substring(12);
     if (discussion===""){
       buildNetwork(url);
     }
@@ -153,7 +153,7 @@ function addLink(user, target){
 
 function buildNetwork(url){
   req = url+".json?jsonp=?";
-  window.history.pushState(req, "Title", "/?discussion="+url);
+  window.history.pushState(req, "Title", baseURL + "?discussion="+url);
   $("#topic_title").html("<h4 class='subheader'>Loading new Network...</h4>");
   $("#preview").empty();
   $("#preview").append(loading_gif);

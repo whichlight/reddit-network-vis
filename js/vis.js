@@ -12,6 +12,9 @@ var discussion_url;
 var loading_gif = new Image();
 loading_gif.src = "./img/ajax-loader.gif";
 
+var baseURL= location.pathname
+
+
 var loading_gif_small = new Image();
 loading_gif_small.src = "./img/small-loader.gif";
 
