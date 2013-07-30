@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>reddit conversation network</title>
+    <script src="libs/d3.min.js"></script>
+    <link rel="stylesheet" href="./css/foundation.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="./libs/jquery-1.10.1.min.js"></script>
+    <link rel="stylesheet" href="css/general_enclosed_foundicons.css">
+  </head>
+  <body>
+    <div class="row">
+      <div class="large-6 columns">
+        <h3 class="subheader ">Visualizing Reddit Discussions</h3>
+      </div>
+      <div class="large-6 columns discussion_input">
+        <div class="row collapse">
+          <div class="small-10 columns">
+            <input type="text" placeholder="Paste in a link to a Reddit thread">
+          </div>
+          <div class="small-2 columns">
+            <a href="#" id="input" class="button prefix"><i class="foundicon-right-arrow"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div id="front">
+        <h5 class="subheader ">Select from the Front Page:</h5>
+        <ul id="stories" class="button-group"></ul>
+      </div>
+    </div>
+    <div id="topic" class="row">
+      <div id="topic_title" class="large-8 columns"></div>
+      <div id="preview" class="large-4 columns"></div>
+    </div>
+    <div class="row">
+      <div id="chart"></div>
+    </div>
+    <div class="row">
+      <div id="info">
+        <h3 class="subheader">
+          Built with <a target="_blank" href="http://d3js.org/">D3</a> and <a target="_blank" href="http://embed.ly">Embedly</a>
+        </h3>
+      </div>
+    </div>
+    <script type="text/javascript" src="./libs/custom.modernizr.js"></script>
+    <script type="text/javascript" src="./libs/foundation.min.js"></script>
+    <script type="text/javascript" src="./libs/jquery.embedly-3.1.1.min.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript" src="./js/crawlconvo.js"></script>
+    <script type="text/javascript" src="./js/vis.js"></script>
+  </body>
+</html>

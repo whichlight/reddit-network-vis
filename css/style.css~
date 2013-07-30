@@ -1,0 +1,33 @@
+#tooltip {
+    position: absolute;
+    text-align: left;
+    padding: 8px;
+    font: 12px Verdana;
+    background-color: white;
+    border-radius: 8px;
+    pointer-events: none;
+}
+
+#chart{
+    background-color:#DBF3FF;
+    width:1000px;
+    height:1000px;
+  border: solid 4px #DBF3FF;
+}
+
+#name{
+    color:blue;
+}
+
+#topic{
+  padding: 10px;
+  border: solid 4px #DBF3FF;
+}
+
+.discussion_input{
+  margin-top:10px;
+}
+
+.embed a{
+ display:block;
+}
