@@ -10,7 +10,8 @@ the content previews are generated with
 [Embedly](https://github.com/embedly/embedly-jquery).
 
 OP is colored orange, all other nodes are black. If they post more than once, I
-give them a random color.
+give them a random color.  The URL updates to reflect the conversation you are
+viewing, so you can share that URL to share the network.
 
 ## Why I made this
 Before Reddit I would browse HN, and after the switch I noticed how nested the
