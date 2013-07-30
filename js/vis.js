@@ -12,6 +12,10 @@ var discussion_url;
 var loading_gif = new Image();
 loading_gif.src = "./img/ajax-loader.gif";
 
+var loading_gif_small = new Image();
+loading_gif_small.src = "./img/small-loader.gif";
+
+
 //Create tooltip element
 var tooltip = d3.select("#chart")
 .append("div")
@@ -120,8 +124,10 @@ function displayTooltip(node){
     .style("left",(pos[0])+"px")
     .style("z-index", 10)
     .style("opacity", .9)
+    $("#tooltip a").append(loading_gif_small);
     $("#tooltip a").embedly({
-      query: {maxheight: 100}
+      query: {maxheight: 100},
+      done: function(){$(this).remove(loading_gif_small);}
     });
 }
 
