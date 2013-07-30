@@ -28,3 +28,5 @@ Looking at an AskReddit you see a lot more upvoting.  Sometimes threads extend
 far from the original post, those usually contain several posts by the same
 user.
 
+### Some dependencies
+This uses Foundation, an icon library from Foundation, jQuery, D3, and Embedly jQuery
