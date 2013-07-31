@@ -17,7 +17,7 @@ viewing, so you can share that URL to share the network.
 Before Reddit I would browse HN, and after the switch I noticed how nested the
 discussions became on Reddit.  I also wanted a quick way to find top comments
 through a conversation.  A network visualization linking responses to parent
-posts seemed natural.
+posts made sense.
 
 I also love looking social data and conversations online. Reddit is a natural
 place to explore.
