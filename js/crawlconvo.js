@@ -152,6 +152,7 @@ function addLink(user, target){
 }
 
 function buildNetwork(url){
+  _gaq.push(["_trackEvent", "Reddit Network", "Discussion", url]);
   req = url+".json?jsonp=?";
   window.history.pushState(req, "Title", baseURL + "?discussion="+url);
   $("#topic_title").html("<h4 class='subheader'>Loading new Network...</h4>");
